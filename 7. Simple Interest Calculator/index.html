@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>💥Simple Interest</title>
+</head>
+
+<body>
+
+  <div class="maindiv">
+    <h1>Simple Interest Calculator</h1>
+
+    <label for="A">Amount: </label>
+    <input type="number" name="A" id="principal" onsubmit="return check();"> <br><br>
+
+    <label for="B">Rate: </label>
+    <input type="range" name="B" id="rate"  value = "10.25" min="0" max="20" step="0.25" oninput="this.nextElementSibling.value=this.value">
+    <output>10.25</output><br><br>
+
+    <label for="C">No. of Years</label>
+    <select id="years" name="C">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select><br><br>
+
+    Interest : <span id="result"></span><br><br>
+
+    <button onclick="compute()">Compute Interest</button>
+    <span id="result">
+
+    </span>
+  </div>
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+<footer>
+  <p>© This Calculator belongs to K B POOVANNA</p>
+</footer>
+
+</html>
